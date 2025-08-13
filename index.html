@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration & Country Info</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <main>
+    <section>
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Subject</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>4545</td>
+            <td>Shucayb Cawke Ahmed</td>
+            <td>Class 6</td>
+            <td>Multimedia</td>
+          </tr>
+          <tr>
+            <td>5643</td>
+            <td>Eng Khadar Muse Ali</td>
+            <td>Class 7</td>
+            <td>Networking</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>7363</td>
+            <td>Ahmed Abdala Abdi</td>
+            <td>Class 9</td>
+            <td>A+</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section>
+        <div id="exploreMode" style="margin-bottom:24px;">
+  <button id="skipToExplore" type="button">🌍 Skip Registration & Explore Country</button>
+</div>
+<div id="countryExplore" style="display:none; margin-bottom:24px;">
+  <label for="exploreCountrySelect"><strong>Select a country to view its beauty:</strong></label>
+  <select id="exploreCountrySelect">
+    <option value="">-- Select Country --</option>
+    <option value="Somalia">Somalia</option>
+    <option value="Somaliland">Somaliland</option>
+    <option value="Ethiopia">Ethiopia</option>
+    <option value="Kenya">Kenya</option>
+    <option value="Tanzania">Tanzania</option>
+    <option value="Sudan">Sudan</option>
+    <option value="Djibouti">Djibouti</option>
+    <option value="Eritrea">Eritrea</option>
+    <option value="Congo">Congo</option>
+  </select>
+</div>
+      <form id="registrationForm">
+        <h3>Registration Form</h3>
+        <div class="form-group">
+          <label>ID</label>
+          <input type="text" name="id" required>
+        </div>
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" name="firstName" required>
+        </div>
+        <div class="form-group">
+          <label>Father's Name</label>
+          <input type="text" name="fathersName" required>
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" name="lastName" required>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label>Re-enter Password</label>
+          <input type="password" name="rePassword" required>
+        </div>
+        <div class="form-group">
+          <label>Gender</label>
+          <label><input type="radio" name="gender" value="male" required> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+        </div>
+        <div class="form-group">
+          <label>Courses</label>
+          <label><input type="checkbox" name="courses" value="Hardware"> Hardware</label>
+          <label><input type="checkbox" name="courses" value="Networking"> Networking</label>
+          <label><input type="checkbox" name="courses" value="Database"> Database</label>
+        </div>
+        <div class="form-group">
+          <label>Choose your country</label>
+          <select name="country" id="countrySelect" required>
+            <option value="">-- Please Select a country not a region --</option>
+            <option value="Somalia">Somalia</option>
+            <option value="Somaliland">Somaliland</option>
+            <option value="Ethiopia">Ethiopia</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Tanzania">Tanzania</option>
+            <option value="Sudan">Sudan</option>
+            <option value="Djibouti">Djibouti</option>
+            <option value="Eritrea">Eritrea</option>
+            <option value="Congo">Congo</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Date</label>
+          <input type="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label>Description</label>
+          <textarea name="description" rows="4" cols="40"></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="submit">Send</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="countryInfo" class="country-info"></section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Shucayb Cawke | my website</p>
+  </footer>
+  <script src="countries.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
